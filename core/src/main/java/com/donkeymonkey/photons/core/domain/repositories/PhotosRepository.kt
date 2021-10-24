@@ -1,5 +1,7 @@
 package com.donkeymonkey.photons.core.domain.repositories
 
+import com.donkeymonkey.photons.core.domain.entities.photos.Photo
+
 interface PhotosRepository {
-    fun getPhotos()
+    suspend fun getRecentPhotos(): List<Photo>
 }
